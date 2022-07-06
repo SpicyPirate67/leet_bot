@@ -37,6 +37,13 @@ The MongoDBurl is where the leet bot will look for the database, in the example 
 
 `host.docker.internal` is the same as `localhost` on a normal machine, but we use this because we are running the bot inside a docker container. "LeetTimeScores" is the name of the database within mongoDB.  
 
+# Discord.js
+This bot uses the dicord.js libary, the documentation and starting guide are linked bellow  
+
+If you wish to add more slash commands, create a new file in the `commands` folder, the name dosent matter but it needs to end with .js for obvious reasons. Once you have finished the command, or when you have changed it and want to update it, run the `DeployCommands.js` file, this will register the commands with the discord API and you will be able to use them.  
+
+Note commands can be either registered globaly or to a guid (a discord server), at the moment all commands are registered globaly so every guild the bot is in will be able to use them. See the documentation if you would like to change this.  
+
 # Documentation links
 [Mongoose](https://mongoosejs.com/)  
 [Discord.js](https://discord.js.org/#/)  

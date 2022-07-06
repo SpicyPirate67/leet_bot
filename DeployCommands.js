@@ -16,6 +16,7 @@ for (const file of commandFiles) {
 
 const rest = new REST({ version: "9" }).setToken(token)
 
+//The .applicationCommands registers commands globaly, see the discord.js docs if you want to change this
 rest.put(
     Routes.applicationCommands(clientID),
     { body: commands })
