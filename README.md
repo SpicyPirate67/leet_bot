@@ -38,8 +38,8 @@ The MongoDBurl is where the leet bot will look for the database, in the example 
 "host.docker.internal" is the same as /localhost on a normal machine, but we use this because we are running the bot inside a docker container. "LeetTimeScores" is the name of the database within mongoDB.  
 
 # Documentation links
-[Mongoose](https://mongoosejs.com/)
-[Discord.js](https://discord.js.org/#/)
-[Discord.js guide](https://discordjs.guide/#before-you-begin)
-[Docker](https://docs.docker.com/)
-[Docker compose](https://docs.docker.com/compose/)
+[Mongoose](https://mongoosejs.com/)  
+[Discord.js](https://discord.js.org/#/)  
+[Discord.js guide](https://discordjs.guide/#before-you-begin)  
+[Docker](https://docs.docker.com/)  
+[Docker compose](https://docs.docker.com/compose/)  
