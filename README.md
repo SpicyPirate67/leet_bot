@@ -11,7 +11,7 @@ Running `docker pull YOUR_DOCKER_ACCOUNT_NAME/THE_IMAGE_NAME` will pull the imag
 
 If your on windows download docker desktop, and your image will show up in there once you have built it. You can run the image from there and it will create a container, this container is the bot running.  
 
-If you want to deploy to another machine, push your docker image to your docker hub account. Then on the machine you want to deploy on, pull the image down and use "docker up YOUR_IMAGE" to run a container for the image  
+If you want to deploy to another machine, push your docker image to your docker hub account. Then on the machine you want to deploy on, pull the image down and use `docker up YOUR_IMAGE` to run a container for the image  
 
 # Config file
 You will need to set up your own config.json  
