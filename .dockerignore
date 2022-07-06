@@ -1,9 +1,12 @@
+#Directories and files in this file will be ignored by docker
+# meaning that they won't be copied into the image when you run "docker build."
 
 #Files
 DeployCommands.js
 Join URL
 .cache
 Dockerfile
+commands/secret.js
 
 #Directories
 Tests/
