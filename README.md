@@ -1,6 +1,8 @@
 # leet_bot
 Dicord bot to track leet time (13:37)
 
+In order to change leet time, edit the leetTime.js file in Objects  
+
 # Docker
 Note: all these commands are meant to be exected on the command line  
 

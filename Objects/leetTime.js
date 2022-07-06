@@ -11,6 +11,7 @@ module.exports = function LeetTime(DiscordClient, guild, time) {
     //Object properties
     this.DiscordClient = DiscordClient;
     this.guild = guild;
+    //Edit this time object to change leet time
     this.time = {hour: 13, minute: 36, second: 50};
     this.leetTime = false;
     this.leetTimeScoreTracker;
