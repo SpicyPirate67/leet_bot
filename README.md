@@ -1,12 +1,12 @@
 # leet_bot
 Dicord bot to track leet time (13:37)
 
-
 # Docker
 Note: all these commands are meant to be exected on the command line
 
 Running "docker build ." will build an image on your machine from the Dockerfile in the directory you run the command from.
-Running "docker-compose up" will run the docker-compose.yml, build the containers listed in it and link them togeather.
+Running "docker-compose up" will run the docker-compose.yml, build/pull the containers listed in it and link them togeather.
+Running "docker pull YOUR_DOCKER_ACCOUNT_NAME/THE_IMAGE_NAME" will pull the image from your docker account
 
 If your on windows download docker desktop, and your image will show up in there once you have built it. You can run the image from there and it will create a container, this container is the bot running.
 
