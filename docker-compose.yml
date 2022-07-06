@@ -1,17 +1,37 @@
 
+#Define the version of docker compose this file is using
 version: '3'
 
+#Services are the containers you want to run
 services:
 
+  #This is the bot container in this configuration it pulls my latest docker image.
+  #If you want to use your own image, replace this parameter with your own
   bot:
     image: spicycherrypirate/leet-bot:latest
+
+    #If you are composing this on a linux machine uncomment these lines as they are requiered
+    # for the bot to find the local host as it maps host.docker.internal to host-gateway
+
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
+
+    #This makes sure the container restarts if it crashes, unless you stop it manually with "docker-compose down"
+    restart:
+      "unless-stopped"
   
+  #This is the database image, it pulls the latest mongo image from docker hub
   db:
     image: mongo:latest
+    #This maps the containers port 27017 to the hosts port 27017
     ports: 
       - 27017:27017
+    #This maps the volume on the machine, mongo_data, to /data/db on the container which is where data is stored
     volumes:
       - mongo_data:/data/db
 
+#This defined the volume mapped above
+#NOTE this is ESSENTIAL for data to be persistant, if this isnt mapped, when the container comes down all data inside it is lost
+#By having this volume, the container stores its data on the drive of the host machine.
 volumes:
   mongo_data:
