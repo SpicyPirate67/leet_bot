@@ -4,6 +4,8 @@ host server.txt
 Join URL.txt
 config.json
 messages.json
+secretMessages.json
+secret.js
 
 #Directories
 Tests/
