@@ -1,0 +1,11 @@
+
+#Files
+host server.txt
+Join URL.txt
+config.json
+
+#Directories
+Tests/
+data/
+functions/
+node_modules/

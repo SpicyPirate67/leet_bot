@@ -1,0 +1,16 @@
+
+#Files
+DeployCommands.js
+Join URL
+.cache
+Dockerfile
+
+#Directories
+Tests/
+functions/
+data/
+
+#Git things
+.git
+.gitignore
+
