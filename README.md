@@ -4,15 +4,19 @@ Dicord bot to track leet time (13:37)
 # Docker
 Note: all these commands are meant to be exected on the command line  
 
-Running `docker build .` will build an image on your machine from the Dockerfile in the directory you run the command from.  
-Running `docker-compose up` will run the docker-compose.yml, build/pull the containers listed in it and link them togeather.  
+Running `docker-compose up` will run the `docker-compose.yml` from the current directory, if it can't find a file it will thorw and error. The `docker-compose.yml` file will pull and build the latest images from docker hub, start their containers and link them togeather.  
+ 
 Running `docker-compose down` will stop all the containers started from the compose file.  
-Running `docker pull YOUR_DOCKER_ACCOUNT_NAME/THE_IMAGE_NAME` will pull the image from your docker account  
 
-If your on windows download docker desktop, and your image will show up in there once you have built it. You can run the image from there and it will create a container, this container is the bot running.  
+If you are running windows or mac, download docker desktop, on linux install the docker and docker-compose packages from your package manager.  
 
-If you want to deploy to another machine, push your docker image to your docker hub account. Then on the machine you want to deploy on, pull the image down and use `docker up YOUR_IMAGE` to run a container for the image  
+If you just want to deploy this app in docker, all you have to do is download / copy the `docker-compose.yml` file, make sure you have docker and docker-compose installed, and run `docker-compose up` in the command line from the directory with the `docker-compose.yml` file. This will pull the latest images from docker hub and start the containers.  
 
+Note: please read through the `docker-compose.yml` file first as there might be changes you have to make if you are deploying on a linux machine.   
+
+Note: docker caches the images, so to ensure you are composing the latest image run `docker-compose pull` to check for the latest images, and pull them if yours are out of date.  
+
+If you would like to build your own image from this repository I recommed reading through the docker documentation and familiarizing yourself with docker, just in case you run into any problems.  
 # Config file
 You will need to set up your own config.json  
 
