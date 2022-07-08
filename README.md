@@ -1,7 +1,7 @@
 # leet_bot
 Dicord bot to track leet time (13:37)
 
-In order to change leet time, edit the leetTime.js file in Objects  
+In order to change leet time, edit the leetTime.js file in Objects. If you are using this bot in a different timezone then you will have to rebuild the docker image and edit the TZ variable in the Dockerfile. 
 
 # Docker
 Note: all these commands are meant to be exected on the command line  
