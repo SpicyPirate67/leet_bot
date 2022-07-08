@@ -6,7 +6,7 @@ In order to change leet time, edit the leetTime.js file in Objects
 # Docker
 Note: all these commands are meant to be exected on the command line  
 
-Running `docker-compose up` will run the `docker-compose.yml` from the current directory, if it can't find a file it will thorw and error. The `docker-compose.yml` file will pull and build the latest images from docker hub, start their containers and link them togeather.  
+Running `docker-compose up` will run the `docker-compose.yml` from the current directory, if it can't find a file it will thorw an error. The `docker-compose.yml` file will pull and build the latest images from docker hub, start their containers and link them togeather.  
  
 Running `docker-compose down` will stop all the containers started from the compose file.  
 

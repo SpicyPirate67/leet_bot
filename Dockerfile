@@ -2,6 +2,9 @@
 #From the node docker image
 FROM node:16.15-alpine
 
+#Set the correct timezone
+ENV TZ=Europe/London
+
 #Set the working directory inside the container to /code
 WORKDIR /code
 
@@ -11,6 +14,10 @@ COPY package-lock.json /code
 
 #Runs npm install in the command line to install all the packages
 RUN npm install
+
+#Install package for managing timezones and configure the timezone
+RUN apk add --no-cache tzdata
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 #Copys everything from the current directory into the /code working directory, ignoring files listed in the .dockerignore file
 COPY . /code 
